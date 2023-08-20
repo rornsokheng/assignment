@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo:hover {
+  color: dodgerblue;
+}
+
+.nav-constainer {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: #333333;
+  z-index: 999;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 20px;
+  font-family: "Kantumruy Pro", sans-serif;
+  color: white;
+}
+ul > li {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.home {
+  color: dodgerblue;
+}
+ul > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: dodgerblue;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+ul > li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.down-contianer {
+  position: absolute;
+  margin-left: 55.4rem;
+  bottom: 1rem;
+}
+.down {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.about-cambo {
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.text-wrap {
+  max-width: 1500px;
+  font-weight: 400;
+  font-size: 25px;
+}
