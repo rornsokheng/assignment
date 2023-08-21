@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Kantumruy Pro", sans-serif;
   scroll-behavior: smooth;
 }
 .logo {
@@ -16,7 +16,22 @@
 .logo:hover {
   color: dodgerblue;
 }
+::-webkit-scrollbar {
+  background-color: white;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #606060;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
 
+::selection {
+  background-color: rgb(89, 203, 248);
+  color: white;
+}
 .nav-constainer {
   position: fixed;
   top: 0;
@@ -34,7 +49,6 @@
   gap: 1.5rem;
   list-style: none;
   font-size: 20px;
-  font-family: "Kantumruy Pro", sans-serif;
   color: white;
 }
 ul > li {
@@ -66,14 +80,18 @@ ul > li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.down-contianer {
-  position: absolute;
-  margin-left: 55.4rem;
-  bottom: 1rem;
+.cam-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.down {
-  font-size: 3rem;
-  cursor: pointer;
+.cam {
+  position: absolute;
+  top: 7rem;
+  z-index: 99;
+  color: white;
+  font-size: 100px;
 }
 .about-cambo {
   margin-top: 5rem;
@@ -88,7 +106,7 @@ ul > li:hover::after {
   margin-top: 5rem;
 }
 .text-wrap {
-  max-width: 1500px;
+  max-width: 1100px;
   font-weight: 400;
   font-size: 25px;
 }
@@ -139,7 +157,61 @@ ul > li:hover::after {
 }
 .img-map {
   margin-top: 3rem;
-  width: 900px;
+}
+.team {
+  margin-top: 8rem;
+  margin-left: 2rem;
+  text-align: center;
+  font-size: 50px;
+  color: #606060;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+.card-body {
+  height: 550px;
+  width: 350px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.card-image {
+  width: 300px;
+  object-fit: cover;
+  padding: 1.3rem 0rem;
+  border-radius: 5px;
+}
+.dev {
+  color: #333333;
+}
+.kampong-speu {
+  margin-top: 7rem;
+  font-size: 50px;
+  text-align: center;
+  color: #333333;
+}
+.about-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12rem;
+}
+.province-text {
+  margin-top: 3rem;
+  font-size: 35px;
+}
+.dis-province {
+  margin-top: 3rem;
+  max-width: 1100px;
+  font-size: 26px;
+  line-height: 2.8rem;
 }
 .footer-container {
   margin-top: 18rem;
